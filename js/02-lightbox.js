@@ -11,8 +11,8 @@ function createImageMarkup(item) {
   return item
     .map(({ preview, original, description }) => {
       return `<li>
-        <a class="gallery__item" href="${preview}">
-  <img class="gallery__image" src="${original}" alt="${description}" />
+        <a class="gallery__item" href="${original}">
+  <img class="gallery__image" src="${preview}" alt="${description}" />
 </a>
     </li>`;
     })
